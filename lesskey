@@ -1,0 +1,4 @@
+#env
+LESS = -R -i -M --mouse --incsearch
+
+#command
