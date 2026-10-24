@@ -16,6 +16,9 @@ version 706.
 `PWD` is used to supply an absolute path to the `ln` commands and should be the
 path to the repository root directory where the `lesskey` file resides.
 
+Note that some `less` binaries (e.g. on some macOS versions) are compiled
+without support for file-based configuration.
+
 ### Versions ≥596 (or ≥583 if `XDG_CONFIG_HOME` is set)
 
 ```sh
@@ -36,8 +39,4 @@ lesskey -o "$HOME/.less" "$PWD/lesskey"
 ```
 
 Re-running this is needed to apply an updated version of `$PWD/lesskey`.
-
-Some systems with `less` versions <582 like macOS may not provide the `lesskey`
-executable, so either a manual install or a compilation on another machine is
-needed.
 
